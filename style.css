@@ -197,7 +197,7 @@ a {
     text-decoration: none;
 }
 
-@media (max-width = 414px) {
+@media (max-width: 414px) {
     .topo {
         width: 100%;
     }

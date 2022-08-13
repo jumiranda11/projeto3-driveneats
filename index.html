@@ -23,7 +23,7 @@
                 <div class="primeira-secao">
                     <h2>Primeiro, seu prato</h2>
                     <div class="produtos">
-                        <div class="primeiro-prato produto prato" onclick="selecionarPrato('primeiro-prato', 'primeiro-tick');">
+                        <div class="primeiro-prato produto prato" onclick="selecionarPrato('primeiro-prato', 'primeiro-tick'); mudarBotaoFinalizar();">
                             <div class="produto-interno">
                                 <img src="./images/frango_yin_yang 1.png" class="imagem-produto">
                                 <p class="titulo-produto">Frango Yin Yang</p>
@@ -34,7 +34,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="produto segundo-prato prato" onclick="selecionarPrato('segundo-prato', 'segundo-tick');">
+                        <div class="produto segundo-prato prato" onclick="selecionarPrato('segundo-prato', 'segundo-tick'); mudarBotaoFinalizar();">
                             <div class="produto-interno">
                                 <img src="./images/frango_yin_yang 1.png" alt="" class="imagem-produto">
                                 <p class="titulo-produto">Frango Yin Yang</p>
@@ -45,7 +45,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="produto terceiro-prato prato" onclick="selecionarPrato('terceiro-prato', 'terceiro-tick');">
+                        <div class="produto terceiro-prato prato" onclick="selecionarPrato('terceiro-prato', 'terceiro-tick'); mudarBotaoFinalizar();">
                             <div class="produto-interno">
                                 <img src="./images/frango_yin_yang 1.png" alt="" class="imagem-produtos">
                                 <p class="titulo-produto">Frango Yin Yang</p>
@@ -61,7 +61,7 @@
                 <div class="segunda-secao">
                     <h2>Agora, sua bebida</h2>
                     <div class="produtos"> 
-                        <div class="produto primeira-bebida bebida" onclick="selecionarBebida('primeira-bebida', 'quarto-tick');">
+                        <div class="produto primeira-bebida bebida" onclick="selecionarBebida('primeira-bebida', 'quarto-tick'); mudarBotaoFinalizar();">
                             <div class="produto-interno">
                                 <img src="./images/coquinha_gelada 1.png" class="imagem-produto">
                                 <p class="titulo-produto">Coquinha gelada</p>
@@ -72,7 +72,7 @@
                                 </svg>
                             </div>
                         </div>  
-                        <div class="produto segunda-bebida bebida" onclick="selecionarBebida('segunda-bebida', 'quinto-tick');">
+                        <div class="produto segunda-bebida bebida" onclick="selecionarBebida('segunda-bebida', 'quinto-tick'); mudarBotaoFinalizar();">
                             <div class="produto-interno">
                                 <img src="./images/coquinha_gelada 1.png" class="imagem-produto">
                                 <p class="titulo-produto">Coquinha gelada</p>
@@ -83,7 +83,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="produto terceira-bebida bebida" onclick="selecionarBebida('terceira-bebida', 'sexto-tick');">
+                        <div class="produto terceira-bebida bebida" onclick="selecionarBebida('terceira-bebida', 'sexto-tick'); mudarBotaoFinalizar();">
                             <div class="produto-interno">
                                 <img src="./images/coquinha_gelada 1.png" class="imagem-produto">
                                 <p class="titulo-produto">Coquinha gelada</p>
@@ -99,7 +99,7 @@
                 <div class="terceira-secao">
                     <h2>Por fim, sua sobremesa</h2>
                     <div class="produtos"> 
-                        <div class="produto primeira-sobre sobremesa" onclick="selecionarSobremesa('primeira-sobre', 'setimo-tick');">
+                        <div class="produto primeira-sobre sobremesa" onclick="selecionarSobremesa('primeira-sobre', 'setimo-tick'); mudarBotaoFinalizar();">
                             <div class="produto-interno">
                                 <img src="./images/pudim 1.png" class="imagem-produto">
                                 <p class="titulo-produto">Pudim</p>
@@ -110,7 +110,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="produto segunda-sobre sobremesa" onclick="selecionarSobremesa('segunda-sobre', 'oitavo-tick');">
+                        <div class="produto segunda-sobre sobremesa" onclick="selecionarSobremesa('segunda-sobre', 'oitavo-tick'); mudarBotaoFinalizar();">
                             <div class="produto-interno">
                                 <img src="./images/pudim 1.png" class="imagem-produto">
                                 <p class="titulo-produto">Pudim</p>
@@ -121,7 +121,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="produto terceira-sobre sobremesa" onclick="selecionarSobremesa('terceira-sobre', 'nono-tick');">
+                        <div class="produto terceira-sobre sobremesa" onclick="selecionarSobremesa('terceira-sobre', 'nono-tick'); mudarBotaoFinalizar();">
                             <div class="produto-interno">
                                 <img src="./images/pudim 1.png" class="imagem-produto">
                                 <p class="titulo-produto">Pudim</p>
@@ -137,9 +137,9 @@
             </div>
             <div class="fundo"> </div>
             <div class="bottom">
-                <div class="botao-finalizar">
-                    <p>Selecione os 3 itens para fechar o pedido</p> 
-                </div>
+                <a href="#" class="botao-finalizar">
+                    <p class="texto-botao-finalizar">Selecione os 3 itens para fechar o pedido</p> 
+                </a>
             </div>  
         </div>
         <script

@@ -63,3 +63,20 @@ function selecionarSobremesa(classBotao, classTick) {
         tick.classList.add('clicado');
     }
 }
+
+function mudarBotaoFinalizar(){
+    const pratoSelecionado = document.querySelector('.produto.prato.clicado');
+    const sobremesaSelecionada = document.querySelector('.produto.sobremesa.clicado');
+    const bebidaSelecionada = document.querySelector('.produto.bebida.clicado');
+    let botaoFinalizar = document.querySelector('.botao-finalizar');
+    let textoBotaoFinalizar = document.querySelector('.texto-botao-finalizar');
+    let link = encodeURIComponent("Olá Julita, muito legal!");
+
+    if (pratoSelecionado !== null && sobremesaSelecionada !== null && bebidaSelecionada !== null) {
+        textoBotaoFinalizar.innerHTML = "Fechar pedido";
+        textoBotaoFinalizar.classList.add('selecionavel');
+        botaoFinalizar.classList.add('selecionavel');
+        botaoFinalizar.href = `https://wa.me/5565996243311?text=${link}`;
+
+}
+}
